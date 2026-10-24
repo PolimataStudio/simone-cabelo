@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simone Arruda | Cabeleireira e Escovista em Parnamirim-RN</title>
+  <meta name="description" content="Portfólio profissional de Simone Maria do Nascimento Arruda, cabeleireira e escovista com mais de 10 anos de experiência. Especialista em escovas, coloração, mechas e tratamentos capilares. Atendimento em Parnamirim, Natal e região.">
+  <meta name="author" content="Simone Maria do Nascimento Arruda">
+  <meta property="og:title" content="Simone Arruda | Cabeleireira e Escovista">
+  <meta property="og:description" content="Transforme sua autoestima com técnicas de beleza capilar. Mais de 10 anos de experiência em escovas, coloração e tratamentos.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="theme-color" content="#B76E79">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <style>
+    /* ===== RESET & TOKENS ===== */
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary: #B76E79;
+      --primary-dark: #9E5A63;
+      --primary-light: #F2E1E3;
+      --secondary: #2C2C2C;
+      --bg: #FFF9F7;
+      --bg-alt: #F5EDE9;
+      --text: #3A3A3A;
+      --text-light: #7A7A7A;
+      --white: #FFFFFF;
+      --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.06);
+      --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.08);
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --font-heading: 'Playfair Display', serif;
+      --font-body: 'Montserrat', sans-serif;
+      --transition: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-weight: 400;
+      overflow-x: hidden;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    /* ===== TIPOGRAFIA ===== */
+    h1, h2, h3, h4 {
+      font-family: var(--font-heading);
+      font-weight: 600;
+      line-height: 1.2;
+      color: var(--secondary);
+    }
+
+    h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); }
+    h2 { font-size: clamp(2rem, 4vw, 3rem); }
+    h3 { font-size: clamp(1.25rem, 2.5vw, 1.75rem); }
+    h4 { font-size: 1.1rem; }
+
+    p {
+      margin-bottom: 1rem;
+      color: var(--text-light);
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      transition: color var(--transition);
+    }
+    a:hover { color: var(--primary-dark); }
+
+    /* ===== UTILITÁRIOS ===== */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .section {
+      padding: 5rem 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 3rem;
+      position: relative;
+    }
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: var(--primary);
+      margin: 1rem auto 0;
+      border-radius: 2px;
+    }
+    .section-title .subtitle {
+      display: block;
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.9rem 2rem;
+      border-radius: 50px;
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-size: 0.95rem;
+      letter-spacing: 0.5px;
+      border: none;
+      cursor: pointer;
+      transition: all var(--transition);
+      text-decoration: none;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: var(--white);
+      box-shadow: 0 4px 15px rgba(183, 110, 121, 0.3);
+    }
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      color: var(--white);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(183, 110, 121, 0.4);
+    }
+    .btn-outline {
+      background: transparent;
+      color: var(--primary);
+      border: 2px solid var(--primary);
+    }
+    .btn-outline:hover {
+      background: var(--primary);
+      color: var(--white);
+      transform: translateY(-2px);
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    /* ===== HEADER ===== */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 1rem 0;
+      transition: background var(--transition), box-shadow var(--transition), padding var(--transition);
+      background: transparent;
+    }
+    .header.scrolled {
+      background: rgba(255, 249, 247, 0.95);
+      backdrop-filter: blur(10px);
+      box-shadow: var(--shadow-sm);
+      padding: 0.6rem 0;
+    }
+    .header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--secondary);
+      line-height: 1.2;
+      transition: color var(--transition);
+    }
+    .logo span {
+      display: block;
+      font-family: var(--font-body);
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--primary);
+    }
+    .nav-list {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      list-style: none;
+    }
+    .nav-list a {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--secondary);
+      position: relative;
+    }
+    .nav-list a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--primary);
+      transition: width var(--transition);
+    }
+    .nav-list a:hover::after {
+      width: 100%;
+    }
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: var(--secondary);
+      cursor: pointer;
+      padding: 0.25rem;
+    }
+
+    @media (max-width: 768px) {
+      .menu-toggle { display: block; }
+      .nav-list {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        max-width: 300px;
+        height: 100vh;
+        background: var(--white);
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+        transition: right var(--transition);
+        padding: 2rem;
+      }
+      .nav-list.open { right: 0; }
+      .nav-list a { font-size: 1.1rem; }
+    }
+
+    /* ===== HERO ===== */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-image:
+    linear-gradient(135deg, rgba(255, 249, 247, 0.55) 0%, rgba(245, 237, 233, 0.45) 100%),
+    url("assets/images/hero-bg-pattern.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center center, center center;
+  background-size: cover, cover;
+  background-color: #FFF9F7;
+  overflow: hidden;
+  padding-top: 80px;
+}
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -20%;
+      right: -10%;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(183, 110, 121, 0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    .hero-content h1 {
+      margin-bottom: 1rem;
+    }
+    .hero-content h1 span {
+      color: var(--primary);
+    }
+    .hero-content .tagline {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: var(--text-light);
+      margin-bottom: 2rem;
+      max-width: 500px;
+    }
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .hero-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .portrait-placeholder {
+      width: 380px;
+      height: 380px;
+      border-radius: 50%;
+      background: linear-gradient(145deg, var(--primary-light), var(--primary));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-heading);
+      font-size: 6rem;
+      color: var(--white);
+      box-shadow: var(--shadow-lg);
+      position: relative;
+      border: 8px solid var(--white);
+      overflow: hidden;
+    }
+    .portrait-photo {
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 20%;
+  box-shadow: var(--shadow-lg);
+  border: 8px solid var(--white);
+  display: block;
+}
+    .portrait-placeholder::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      box-shadow: inset 0 0 60px rgba(0,0,0,0.1);
+    }
+    @media (max-width: 900px) {
+      .hero .container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+      }
+      .hero-content .tagline { margin-left: auto; margin-right: auto; }
+      .hero-buttons { justify-content: center; }
+      .portrait-photo {
+        width: 280px;
+        height: 280px;
+        font-size: 4.5rem;
+      }
+    }
+
+    /* ===== SOBRE ===== */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    .about-text h3 {
+      margin-bottom: 1rem;
+    }
+    .about-text p {
+      margin-bottom: 1.2rem;
+    }
+    .mei-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-top: 1rem;
+    }
+    .about-stats {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+    .stat-item {
+      background: var(--white);
+      padding: 1.5rem;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+      text-align: center;
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+    .stat-item:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+    }
+    .stat-number {
+      font-family: var(--font-heading);
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--primary);
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+    .stat-label {
+      font-size: 0.85rem;
+      color: var(--text-light);
+      font-weight: 500;
+    }
+    @media (max-width: 900px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+
+    /* ===== SERVIÇOS ===== */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .service-card {
+      background: var(--white);
+      padding: 2.5rem 2rem;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+      text-align: center;
+      transition: transform var(--transition), box-shadow var(--transition);
+      border-bottom: 3px solid transparent;
+    }
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-md);
+      border-bottom-color: var(--primary);
+    }
+    .service-icon {
+      width: 70px;
+      height: 70px;
+      margin: 0 auto 1.5rem;
+      background: var(--primary-light);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      color: var(--primary);
+      transition: background var(--transition), color var(--transition);
+    }
+    .service-card:hover .service-icon {
+      background: var(--primary);
+      color: var(--white);
+    }
+    .service-card h3 {
+      margin-bottom: 0.75rem;
+      font-size: 1.25rem;
+    }
+    .service-card p {
+      font-size: 0.9rem;
+      margin-bottom: 0;
+    }
+
+    /* ===== EXPERIÊNCIA ===== */
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 2px;
+      height: 100%;
+      background: var(--primary-light);
+    }
+    .timeline-item {
+      position: relative;
+      width: 50%;
+      padding: 1.5rem 2.5rem;
+      margin-bottom: 2rem;
+    }
+    .timeline-item:nth-child(odd) {
+      left: 0;
+      text-align: right;
+      padding-right: 3rem;
+    }
+    .timeline-item:nth-child(even) {
+      left: 50%;
+      text-align: left;
+      padding-left: 3rem;
+    }
+    .timeline-dot {
+      position: absolute;
+      top: 2rem;
+      width: 16px;
+      height: 16px;
+      background: var(--primary);
+      border: 3px solid var(--white);
+      border-radius: 50%;
+      box-shadow: 0 0 0 3px var(--primary-light);
+      z-index: 1;
+    }
+    .timeline-item:nth-child(odd) .timeline-dot {
+      right: -8px;
+    }
+    .timeline-item:nth-child(even) .timeline-dot {
+      left: -8px;
+    }
+    .timeline-content {
+      background: var(--white);
+      padding: 1.5rem 2rem;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+    .timeline-content:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+    }
+    .timeline-content h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.25rem;
+    }
+    .timeline-content .company {
+      font-size: 0.9rem;
+      color: var(--primary);
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+    .timeline-content .period {
+      font-size: 0.8rem;
+      color: var(--text-light);
+      margin-bottom: 0.75rem;
+    }
+    .timeline-content p {
+      font-size: 0.9rem;
+      margin-bottom: 0;
+    }
+    @media (max-width: 768px) {
+      .timeline::before {
+        left: 20px;
+      }
+      .timeline-item {
+        width: 100%;
+        padding-left: 3.5rem;
+        padding-right: 0;
+        text-align: left !important;
+      }
+      .timeline-item:nth-child(odd),
+      .timeline-item:nth-child(even) {
+        left: 0;
+        padding-left: 3.5rem;
+        padding-right: 0;
+      }
+      .timeline-dot {
+        left: 12px !important;
+        right: auto !important;
+      }
+    }
+
+    /* ===== FORMAÇÃO ===== */
+    .education-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .education-card {
+      background: var(--white);
+      padding: 2rem;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+      transition: transform var(--transition), box-shadow var(--transition);
+      border-left: 4px solid var(--primary);
+    }
+    .education-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+    }
+    .education-card h3 {
+      font-size: 1.15rem;
+      margin-bottom: 0.25rem;
+    }
+    .education-card .institution {
+      font-size: 0.9rem;
+      color: var(--primary);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .education-card p {
+      font-size: 0.9rem;
+      margin-bottom: 0;
+    }
+
+    /* ===== HABILIDADES ===== */
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .skill-tag {
+      background: var(--white);
+      padding: 0.75rem 1.5rem;
+      border-radius: 50px;
+      box-shadow: var(--shadow-sm);
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--secondary);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all var(--transition);
+      border: 1px solid transparent;
+    }
+    .skill-tag:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+      transform: translateY(-2px);
+    }
+    .skill-tag i {
+      color: var(--primary);
+    }
+
+/* ===== GALERIA ===== */
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  flex: 1 1 220px;
+  max-width: 270px;
+  aspect-ratio: 9 / 16;
+  margin: 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  position: relative;
+  background: #1a1a1a;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.gallery-item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.gallery-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  background: #000;
+}
+
+@media (max-width: 640px) {
+  .gallery-item {
+    flex: 1 1 100%;
+    max-width: 320px;
+  }
+}
+
+.gallery-note {
+  display: block;
+  width: 100%;
+  max-width: 880px;
+  margin: 2rem auto 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+    /* ===== CONTATO ===== */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+    .contact-info h3 {
+      margin-bottom: 1.5rem;
+    }
+    .contact-list {
+      list-style: none;
+      margin-bottom: 2rem;
+    }
+    .contact-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1.2rem;
+      font-size: 0.95rem;
+      color: var(--text-light);
+    }
+    .contact-list li i {
+      color: var(--primary);
+      font-size: 1.1rem;
+      margin-top: 0.2rem;
+      width: 20px;
+      text-align: center;
+    }
+    .contact-list li a {
+      color: var(--text-light);
+    }
+    .contact-list li a:hover {
+      color: var(--primary);
+    }
+    .contact-cta {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .contact-map {
+      background: var(--white);
+      padding: 2rem;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+      text-align: center;
+    }
+    .contact-map i {
+      font-size: 2.5rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+    .contact-map h4 {
+      margin-bottom: 0.5rem;
+    }
+    .contact-map p {
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+    @media (max-width: 900px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      background: var(--secondary);
+      color: rgba(255,255,255,0.8);
+      padding: 3rem 0 2rem;
+      text-align: center;
+    }
+    .footer .logo {
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+    .footer .logo span {
+      color: var(--primary-light);
+    }
+    .footer p {
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+      color: rgba(255,255,255,0.6);
+    }
+    .footer .mei-info {
+      font-size: 0.75rem;
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      color: rgba(255,255,255,0.4);
+    }
+
+    /* ===== BACK TO TOP ===== */
+    .back-to-top {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      width: 48px;
+      height: 48px;
+      background: var(--primary);
+      color: var(--white);
+      border: none;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      cursor: pointer;
+      box-shadow: var(--shadow-md);
+      opacity: 0;
+      visibility: hidden;
+      transition: all var(--transition);
+      z-index: 999;
+    }
+    .back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+    .back-to-top:hover {
+      background: var(--primary-dark);
+      transform: translateY(-3px);
+    }
+
+    /* ===== REVEAL ANIMATIONS ===== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="#" class="logo">
+        Simone Arruda
+        <span>Cabeleireira & Escovista</span>
+      </a>
+      <nav aria-label="Navegação principal">
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-list" id="navList">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#experiencia">Experiência</a></li>
+          <li><a href="#formacao">Formação</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="inicio">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Simone <span>Arruda</span></h1>
+          <p class="tagline">Transformando autoestima através da beleza capilar. Mais de 10 anos de experiência em escovas, coloração e tratamentos.</p>
+          <div class="hero-buttons">
+            <a href="#contato" class="btn btn-primary">
+              <i class="fas fa-calendar-check"></i> Agende seu horário
+            </a>
+            <a href="#servicos" class="btn btn-outline">
+              <i class="fas fa-scissors"></i> Conheça os serviços
+            </a>
+          </div>
+        </div>
+<div class="hero-image">
+  <img
+    src="assets/images/profile/simone-arruda-retrato.webp"
+    alt="Retrato profissional de Simone Arruda, cabeleireira e escovista"
+    class="portrait-photo"
+    width="900"
+    height="1200"
+    loading="eager"
+    fetchpriority="high"
+    decoding="async"
+  >
+</div>
+      </div>
+    </section>
+
+    <!-- ===== SOBRE ===== -->
+    <section class="section" id="sobre">
+      <div class="container">
+        <div class="section-title reveal">
+          <span class="subtitle">Quem sou</span>
+          <h2>Sobre mim</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <h3>Paixão por transformar vidas através do cabelo</h3>
+            <p>Sou Simone Maria do Nascimento Arruda, cabeleireira e escovista com mais de 10 anos de experiência no mundo da beleza. Minha trajetória foi construída na prática, com dedicação e aperfeiçoamento contínuo, sempre buscando as melhores técnicas para encantar e promover a satisfação dos meus clientes.</p>
+            <p>Trabalhei em diversos salões e também em atendimento domiciliar, o que me proporcionou uma visão ampla das necessidades e preferências de cada pessoa. Sou especialista em escovas, prancha, tratamentos com progressiva, coloração, luzes, mechas e finalizações.</p>
+            <p>Recentemente, formalizei minha atividade como Microempreendedora Individual (MEI), estando preparada para novos desafios e oportunidades no mercado da beleza.</p>
+            <div class="mei-badge">
+              <i class="fas fa-check-circle"></i> MEI Ativa · CNPJ 69.787.012/0001-04
+            </div>
+          </div>
+          <div class="about-stats reveal">
+            <div class="stat-item">
+              <div class="stat-number">10+</div>
+              <div class="stat-label">Anos de Experiência</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">3</div>
+              <div class="stat-label">Salões Parceiros</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Dedicação</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">5</div>
+              <div class="stat-label">Especialidades</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVIÇOS ===== -->
+    <section class="section" id="servicos" style="background: var(--bg-alt);">
+      <div class="container">
+        <div class="section-title reveal">
+          <span class="subtitle">O que ofereço</span>
+          <h2>Serviços</h2>
+        </div>
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="service-icon"><i class="fas fa-wind"></i></div>
+            <h3>Escova & Finalização</h3>
+            <p>Escovas modeladas, prancha e finalizações que realçam a beleza natural do seu cabelo.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-icon"><i class="fas fa-palette"></i></div>
+            <h3>Coloração & Mechas</h3>
+            <p>Colorimetria avançada, luzes, mechas e técnicas para um resultado luminoso e personalizado.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-icon"><i class="fas fa-spa"></i></div>
+            <h3>Tratamentos Capilares</h3>
+            <p>Progressivas, botox, hidratações e reconstruções para a saúde e brilho dos fios.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-icon"><i class="fas fa-cut"></i></div>
+            <h3>Cortes & Penteados</h3>
+            <p>Cortes modernos e penteados para ocasiões especiais, respeitando o estilo de cada cliente.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIÊNCIA ===== -->
+    <section class="section" id="experiencia">
+      <div class="container">
+        <div class="section-title reveal">
+          <span class="subtitle">Minha trajetória</span>
+          <h2>Experiência Profissional</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Cabeleireira</h3>
+              <div class="company">Claudio Cabelos</div>
+              <div class="period">2025 – Atual · Centro, Parnamirim</div>
+              <p>Atuação com escovas, coloração, mechas, tratamentos capilares e mega hair. Atendimento personalizado, com foco na satisfação e na autoestima do cliente.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Cabeleireira</h3>
+              <div class="company">Studio Patrícia Fontes</div>
+              <div class="period">2022 – 2024 · Natal, Neópolis</div>
+              <p>Atuação com escovas, coloração, mechas e tratamentos capilares. Atendimento personalizado e foco na satisfação do cliente.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Cabeleireira & Escovista</h3>
+              <div class="company">Espaço Sis Escovaria e Esmalteria</div>
+              <div class="period">2020 – 2022 · Parnamirim, Centro</div>
+              <p>Especialização em escovas, pranchas e finalizações. Atendimento em um ambiente focado em beleza e bem-estar.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Cabeleireira</h3>
+              <div class="company">Atendimento em Domicílio</div>
+              <div class="period">2016 – 2020 · Parnamirim</div>
+              <p>Serviços de beleza capilar realizados na casa dos clientes, com flexibilidade de horários e atendimento personalizado.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FORMAÇÃO ===== -->
+    <section class="section" id="formacao" style="background: var(--bg-alt);">
+      <div class="container">
+        <div class="section-title reveal">
+          <span class="subtitle">Qualificação</span>
+          <h2>Formação & Cursos</h2>
+        </div>
+        <div class="education-grid">
+          <article class="education-card reveal">
+            <h3>Cabeleireira Profissional</h3>
+            <div class="institution">Instituto Mix / Instituto da Beleza</div>
+            <p>Administração de salão, técnicas de atendimento ao cliente, ética profissional, tricologia e tratamentos capilares, técnicas de corte e químicas, colorimetria.</p>
+          </article>
+          <article class="education-card reveal">
+            <h3>Workshop de Mechas</h3>
+            <div class="institution">Fernanda Ribeiro</div>
+            <p>Aperfeiçoamento em técnicas de mechas, iluminação e tendências de coloração.</p>
+          </article>
+          <article class="education-card reveal">
+            <h3>Ensino Médio Completo</h3>
+            <div class="institution">Formação Básica</div>
+            <p>Base educacional que complementa minha trajetória profissional e comunicação eficaz.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HABILIDADES ===== -->
+    <section class="section" id="habilidades">
+      <div class="container">
+        <div class="section-title reveal">
+          <span class="subtitle">Competências</span>
+          <h2>Habilidades</h2>
+        </div>
+        <div class="skills-container reveal">
+          <div class="skill-tag"><i class="fas fa-comments"></i> Comunicação Eficaz</div>
+          <div class="skill-tag"><i class="fas fa-users"></i> Trabalho em Equipe</div>
+          <div class="skill-tag"><i class="fas fa-bolt"></i> Rapidez na Resolução</div>
+          <div class="skill-tag"><i class="fas fa-graduation-cap"></i> Atualização Constante</div>
+          <div class="skill-tag"><i class="fas fa-heart"></i> Atendimento Humanizado</div>
+          <div class="skill-tag"><i class="fas fa-clock"></i> Pontualidade</div>
+        </div>
+      </div>
+    </section>
+
+<!-- ===== GALERIA ===== -->
+<section class="section" id="galeria" style="background: var(--bg-alt);">
+  <div class="container">
+    <div class="section-title reveal">
+      <span class="subtitle">Meus trabalhos</span>
+      <h2>Galeria</h2>
+    </div>
+    <div class="gallery-grid">
+      <figure class="gallery-item reveal">
+        <video
+          src="assets/images/gallery/1.mp4"
+          width="1080"
+          height="1920"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          aria-label="Vídeo de escova modelada finalizada"
+        ></video>
+      </figure>
+      <figure class="gallery-item reveal">
+        <video
+          src="assets/images/gallery/2.mp4"
+          width="1080"
+          height="1920"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          aria-label="Vídeo de coloração com mechas e luminosidade nos fios"
+        ></video>
+      </figure>
+      <figure class="gallery-item reveal">
+        <video
+          src="assets/images/gallery/3.mp4"
+          width="1080"
+          height="1920"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          aria-label="Vídeo de tratamento capilar com cabelo saudável e brilhante"
+        ></video>
+      </figure>
+    </div>
+    <p class="gallery-note">Acompanhe mais trabalhos no <a href="https://instagram.com/simone.cabelo" target="_blank" rel="noopener">Instagram @simone.cabelo</a></p>
+  </div>
+</section>
+
+    <!-- ===== CONTATO ===== -->
+    <section class="section" id="contato">
+      <div class="container">
+        <div class="section-title reveal">
+          <span class="subtitle">Vamos conversar</span>
+          <h2>Contato</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <h3>Agende seu horário ou tire dúvidas</h3>
+            <ul class="contact-list">
+              <li>
+                <i class="fas fa-phone-alt"></i>
+                <div>
+                  <a href="tel:+5584986345601">(84) 9 8634-5601</a><br>
+                  <a href="tel:+5584988164322">(84) 9 8816-4322</a>
+                </div>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:simonearruda250810@gmail.com">simonearruda250810@gmail.com</a>
+              </li>
+              <li>
+                <i class="fab fa-instagram"></i>
+                <a href="https://instagram.com/simone.cabelo" target="_blank" rel="noopener">@simone.cabelo</a>
+              </li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Rua Padre Luis Gonzaga Monte, 64 – Emaús<br>Parnamirim – RN, 59148-440</span>
+              </li>
+            </ul>
+            <div class="contact-cta">
+              <a href="https://wa.me/5584986345601?text=Ol%C3%A1%20Simone!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener" class="btn btn-primary">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+              </a>
+              <button id="copyEmail" class="btn btn-outline">
+                <i class="fas fa-copy"></i> Copiar e-mail
+              </button>
+            </div>
+          </div>
+          <div class="contact-map reveal">
+            <i class="fas fa-map"></i>
+            <h4>Localização</h4>
+            <p>Atendimento em Parnamirim, Natal e região. Consulte disponibilidade para atendimento domiciliar.</p>
+            <a href="https://maps.google.com/?q=Rua+Padre+Luis+Gonzaga+Monte+64+Emaús+Parnamirim+RN" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:0.85rem;">
+              <i class="fas fa-external-link-alt"></i> Ver no Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="logo">Simone Arruda <span>Cabeleireira & Escovista</span></div>
+      <p>&copy; 2026 Simone Arruda. Todos os direitos reservados.</p>
+      <p class="mei-info">MEI · CNPJ 69.787.012/0001-04</p>
+    </div>
+  </footer>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script>
+    (function() {
+      'use strict';
+
+      // Header scroll effect
+      const header = document.getElementById('header');
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+
+      // Mobile menu toggle
+      const menuToggle = document.getElementById('menuToggle');
+      const navList = document.getElementById('navList');
+      menuToggle.addEventListener('click', function() {
+        const isOpen = navList.classList.toggle('open');
+        menuToggle.setAttribute('aria-expanded', isOpen);
+        menuToggle.innerHTML = isOpen ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+      });
+
+      // Close mobile menu on link click
+      navList.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', function() {
+          navList.classList.remove('open');
+          menuToggle.setAttribute('aria-expanded', 'false');
+          menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+        });
+      });
+
+      // Reveal on scroll with IntersectionObserver
+      const revealElements = document.querySelectorAll('.reveal');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      });
+      revealElements.forEach(el => observer.observe(el));
+
+      // Back to top button
+      const backToTop = document.getElementById('backToTop');
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 500) {
+          backToTop.classList.add('visible');
+        } else {
+          backToTop.classList.remove('visible');
+        }
+      });
+      backToTop.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // Copy email functionality
+      const copyEmailBtn = document.getElementById('copyEmail');
+      const email = 'simonearruda250810@gmail.com';
+      copyEmailBtn.addEventListener('click', function() {
+        navigator.clipboard.writeText(email).then(() => {
+          const originalHTML = copyEmailBtn.innerHTML;
+          copyEmailBtn.innerHTML = '<i class="fas fa-check"></i> Copiado!';
+          copyEmailBtn.style.borderColor = '#28a745';
+          copyEmailBtn.style.color = '#28a745';
+          setTimeout(() => {
+            copyEmailBtn.innerHTML = originalHTML;
+            copyEmailBtn.style.borderColor = '';
+            copyEmailBtn.style.color = '';
+          }, 2000);
+        }).catch(() => {
+          // Fallback
+          const textArea = document.createElement('textarea');
+          textArea.value = email;
+          document.body.appendChild(textArea);
+          textArea.select();
+          document.execCommand('copy');
+          document.body.removeChild(textArea);
+          const originalHTML = copyEmailBtn.innerHTML;
+          copyEmailBtn.innerHTML = '<i class="fas fa-check"></i> Copiado!';
+          setTimeout(() => {
+            copyEmailBtn.innerHTML = originalHTML;
+          }, 2000);
+        });
+      });
+
+/* ---------- Galeria de vídeos: acessibilidade e desempenho ---------- */
+(function initGalleryVideos() {
+  var videos = document.querySelectorAll('.gallery-item video');
+  if (!videos.length) return;
+
+  // Respeita prefers-reduced-motion: não autoplay, mostra controles
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduceMotion) {
+    videos.forEach(function (v) {
+      v.removeAttribute('autoplay');
+      v.removeAttribute('loop');
+      v.pause();
+      v.setAttribute('controls', '');
+    });
+    return;
+  }
+
+  // Pausa vídeos fora da viewport (economia de CPU/bateria)
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        var video = entry.target;
+        if (entry.isIntersecting) {
+          var p = video.play();
+          if (p && typeof p.catch === 'function') p.catch(function () {});
+        } else {
+          video.pause();
+        }
+      });
+    }, { threshold: 0.25 });
+
+    videos.forEach(function (v) { io.observe(v); });
+  }
+})();
+
+})();
+  </script>
+</body>
+</html>

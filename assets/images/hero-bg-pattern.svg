@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" fill="none">
+  <title>Padrão orgânico suave em rosa e nude para fundo de hero</title>
+  <desc>Fundo transparente com linhas onduladas e formas orgânicas discretas em tons de rosa queimado, blush e nude.</desc>
+  <defs>
+    <linearGradient id="blushWash" x1="1110" y1="70" x2="1900" y2="930" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E8C9C5" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#C99A91" stop-opacity="0.07"/>
+    </linearGradient>
+    <linearGradient id="nudeWash" x1="1280" y1="900" x2="1850" y2="250" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D9B8A8" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#B76E79" stop-opacity="0.04"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Organic washes kept mostly to the right, leaving room for hero copy. -->
+  <path d="M1310 -110C1515 -65 1537 95 1683 137C1828 179 1943 117 2010 30V-110H1310Z" fill="url(#blushWash)"/>
+  <path d="M1470 1080C1406 949 1466 845 1570 776C1694 694 1810 741 1955 621V1080H1470Z" fill="url(#nudeWash)"/>
+  <path d="M1640 -30C1559 114 1641 218 1768 260C1859 290 1928 267 1990 222" stroke="#B76E79" stroke-opacity="0.12" stroke-width="2"/>
+  <path d="M1542 -46C1450 128 1546 261 1704 310C1824 348 1908 313 1985 260" stroke="#C99A91" stroke-opacity="0.11" stroke-width="2"/>
+  <path d="M1450 -57C1348 144 1452 305 1634 361C1775 404 1884 363 1988 296" stroke="#D7B4AA" stroke-opacity="0.14" stroke-width="2"/>
+
+  <!-- Flowing, fine contour lines. -->
+  <g stroke-linecap="round">
+    <path d="M1084 -42C1244 65 1212 184 1350 245C1502 313 1624 240 1740 321C1845 394 1851 507 1985 537" stroke="#B76E79" stroke-opacity="0.10" stroke-width="2"/>
+    <path d="M1037 -58C1190 48 1164 154 1308 222C1472 300 1604 223 1725 303C1840 379 1844 482 1990 513" stroke="#D5AAA6" stroke-opacity="0.13" stroke-width="2"/>
+    <path d="M990 -75C1136 29 1116 126 1264 197C1438 280 1582 206 1708 285C1836 366 1832 458 1998 490" stroke="#C79A91" stroke-opacity="0.10" stroke-width="2"/>
+    <path d="M1928 445C1760 495 1736 597 1603 650C1467 704 1386 644 1260 718C1156 780 1145 900 1010 970" stroke="#B76E79" stroke-opacity="0.09" stroke-width="2"/>
+    <path d="M1964 482C1796 531 1770 630 1635 687C1491 748 1404 682 1284 755C1174 822 1171 930 1044 1000" stroke="#D4B0A4" stroke-opacity="0.13" stroke-width="2"/>
+    <path d="M1990 523C1830 570 1802 668 1666 724C1516 787 1431 725 1310 796C1198 862 1202 956 1080 1030" stroke="#CDA39A" stroke-opacity="0.10" stroke-width="2"/>
+  </g>
+
+  <!-- A few soft organic outlines for depth, with restrained opacity. -->
+  <path d="M1715 415C1775 371 1862 391 1889 450C1916 509 1882 576 1817 590C1753 605 1693 555 1699 492C1701 462 1703 438 1715 415Z" stroke="#B76E79" stroke-opacity="0.10" stroke-width="2"/>
+  <path d="M1743 438C1790 403 1849 423 1867 466C1886 512 1856 555 1810 566C1765 578 1724 539 1728 496C1730 473 1733 453 1743 438Z" stroke="#D4B0A4" stroke-opacity="0.12" stroke-width="2"/>
+  <path d="M1385 836C1438 792 1507 809 1529 861C1551 913 1517 970 1459 979C1405 987 1362 946 1368 892C1370 868 1374 849 1385 836Z" stroke="#CDA39A" stroke-opacity="0.10" stroke-width="2"/>
+
+  <!-- Subtle specks, intentionally sparse. -->
+  <g fill="#B76E79" fill-opacity="0.13">
+    <circle cx="1585" cy="376" r="3"/>
+    <circle cx="1641" cy="397" r="2"/>
+    <circle cx="1684" cy="372" r="2.5"/>
+    <circle cx="1498" cy="770" r="2.5"/>
+    <circle cx="1540" cy="748" r="2"/>
+    <circle cx="1580" cy="777" r="3"/>
+    <circle cx="1785" cy="642" r="2.5"/>
+  </g>
+</svg>
